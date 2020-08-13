@@ -7,7 +7,10 @@ import {
   DidMountClass,
   UseEffectFun,
   UseContextFun,
-  UseCallBackFun
+  UseCallBackFun,
+  useMemoFun,
+  UseMemoFun,
+
 } from './components';
 
 function App() {
@@ -22,6 +25,7 @@ function App() {
           <Route exact path="/use-effect" component={UseEffectFun} />
           <Route exact path="/use-context" component={UseContextFun} />
           <Route exact path="/use-callback" component={UseCallBackFun} />
+          <Route exact path="/use-memo" component={UseMemoFun} />
           <Route path="/" component={StateClass} />
         </Switch>
       </BrowserRouter>
