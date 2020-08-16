@@ -8,9 +8,8 @@ import {
   UseEffectFun,
   UseContextFun,
   UseCallBackFun,
-  useMemoFun,
+  UseRefFunc,
   UseMemoFun,
-
 } from './components';
 
 function App() {
@@ -26,6 +25,7 @@ function App() {
           <Route exact path="/use-context" component={UseContextFun} />
           <Route exact path="/use-callback" component={UseCallBackFun} />
           <Route exact path="/use-memo" component={UseMemoFun} />
+          <Route exact path="/use-ref" component={UseRefFunc} />
           <Route path="/" component={StateClass} />
         </Switch>
       </BrowserRouter>
